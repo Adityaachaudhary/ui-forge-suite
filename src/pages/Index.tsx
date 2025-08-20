@@ -1,6 +1,7 @@
 import React from "react"
 import { InputFieldDemo } from "@/components/demo/input-field-demo"
 import { DataTableDemo } from "@/components/demo/data-table-demo"
+import { ThemeToggle } from "@/components/ui/theme-toggle"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Badge } from "@/components/ui/badge"
@@ -12,6 +13,9 @@ const Index = () => {
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-gradient-primary">
         <div className="absolute inset-0 bg-grid-white/10 bg-[size:20px_20px] [mask-image:radial-gradient(white,transparent_70%)]" />
+        <div className="absolute top-4 right-4 z-10">
+          <ThemeToggle />
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
           <div className="text-center">
             <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
